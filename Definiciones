@@ -1,0 +1,50 @@
+Programación orientada a objetos:
+Los programas se organizan como colecciones cooperativas de objetos
+Representan una instancia de alguna clase
+Todas las clases son miembros de una jerarquía de clases unidas mediante relaciones de herencia
+
+Clase y Objeto:
+Una Clase son como “características generales” de un objeto.
+Un Objeto es una instancia de una clase, son como las características que diferencian a distintos objetos de una misma clase.
+
+Ejemplo: 
+En la Clase “Perro” sabemos que tiene 4 patas, 2 ojos, 2 orejas, etc. Y si hablamos de una instancia (Objeto) de Perro, nos estaríamos refiriendo a un Perro en particular definiendo atributos como raza, color, peso,edad, etc.
+Clase: Perro
+Objeto de Clase Perro: 
+Raza: Bull dog frances
+Color: Blanco
+Peso: 12kg
+Edad: 1 año
+
+Conclusión: Todos sabemos lo que es un perro, pero existen características que los diferencian a todos.
+
+Los cuatro pilares claves:
+
+Encapsulamiento:
+Es como una cápsula que protege los datos internos de un objeto. Solo se puede acceder a través de métodos controlados
+Ejemplos: 
+En un cajero automático no puedes acceder directamente al dinero, sólo through operaciones autorizadas (retiro, depósito)
+
+Herencia:
+Permite que una clase hija herede características y comportamientos de una clase padre
+Ejemplos: 
+Un “auto” y una “moto” heredan de “vehículo” (ambos tienen ruedas, motor, etc)
+“Perro” y ”gato” heredan de ”animal” (comparten comer, respirar, moverse)
+
+Polimorfismo:
+La capacidad de diferentes objetos respondan de manera distinta al mismo mensaje o método
+Ejemplos: 
+El botón “encender” hace cosas diferentes en un “TV”, en una “radio” y un “auto”
+En “animales” el método “hacer sonido” produce distintos “sonidos” en animales distintos 
+
+Abstracción:
+Mostrar sólo lo esencial de un objeto, ocultando los detalles complejos de su implementación
+Ejemplos:
+Con un volante de auto solo te preocupas por girarlo (abstracción), no por como funciona la dirección hidráulica interna
+En un enchufe solo conectas el aparato (abstracción), no necesitas saber sobre electricidad y circuitos
+
+Relación entre ellos: Trabajan juntos como equipo.
+La Abstracción define que hace un objeto
+El Encapsulamiento protege como lo hace
+La Herencia organiza y reutiliza el que y como
+El Polimorfismo permite variaciones en el cómo se hace
