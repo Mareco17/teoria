@@ -1,0 +1,116 @@
+📘 Resumen de Programación Orientada a Objetos (POO) en Java
+1. Conceptos Fundamentales
+
+POO: paradigma que organiza programas en colecciones de objetos que interactúan entre sí.
+
+Objeto: entidad que representa algo (persona, transacción, producto). Tiene:
+
+Atributos → características o estado (ej: nombre, edad).
+
+Métodos → comportamientos o acciones (ej: comer, calcularEdad).
+
+Clase: molde o plantilla a partir de la cual se crean los objetos.
+
+Instancia: cada objeto particular creado a partir de una clase.
+
+Abstracción: enfocarse en lo esencial y omitir lo irrelevante para el modelo.
+
+Modelado: identificar entidades y relaciones de un área específica (ej: ventas, finanzas).
+
+2. Estructura de una Clase
+
+Una clase en Java suele incluir:
+
+Atributos (normalmente private).
+
+Constructores:
+
+Método especial para inicializar objetos.
+
+Puede haber varios (sobrecarga).
+
+Asignan valores iniciales y evitan null.
+
+Métodos (normalmente public):
+
+Definen el comportamiento de los objetos.
+
+Ejemplo: public String comer() { return this.nombre + " está comiendo"; }
+
+📌 Ejemplo:
+
+public class Persona {
+    private String nombre;
+    private int edad;
+    private String dni;
+
+    public Persona() {  // Constructor por defecto
+        nombre = "";
+        edad = 0;
+        dni = "";
+    }
+
+    public Persona(String unNombre) { // Constructor con parámetro
+        this.nombre = unNombre;
+    }
+
+    public String comer() {
+        return this.nombre + " está comiendo";
+    }
+}
+
+3. Palabra Clave this
+
+Apunta al objeto actual en ejecución.
+
+Se usa para:
+
+Diferenciar atributos de parámetros con el mismo nombre.
+
+Referirse al objeto dentro de sus propios métodos.
+
+4. Métodos de Acceso (Getters y Setters)
+
+Getter (get): devuelve el valor de un atributo.
+
+Setter (set): modifica el valor de un atributo.
+
+Ejemplo:
+
+public String getNombre() {
+    return nombre;
+}
+
+public void setNombre(String nombre) {
+    this.nombre = nombre;
+}
+
+5. Convenciones en Java
+
+Las clases se nombran con mayúscula inicial (Persona, Cliente).
+
+Los métodos y atributos comienzan en minúscula (getNombre, edad).
+
+Punto de entrada: clase Main con método main.
+
+6. Otros Conceptos Clave
+
+Sobrecarga de constructores: varios constructores en la misma clase con distintos parámetros.
+
+Concatenación: + combina Strings (y convierte a String cualquier otro tipo si se suma a un String).
+
+toString(): método para representar un objeto como texto.
+
+Diagrama de clases UML: representación gráfica con nombre, atributos y métodos.
+
+7. Conceptos Avanzados
+
+Herencia: permite que una clase (subclase) herede atributos y métodos de otra (superclase).
+
+Facilita la reutilización de código.
+
+Ejemplo: Empleado extends Persona.
+
+Reutilización y extensión: gracias a la herencia y polimorfismo, se evita duplicar código.
+
+Encapsulamiento: restringe el acceso directo a los atributos usando modificadores de acceso (private, public, protected).
