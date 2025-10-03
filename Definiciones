@@ -43,8 +43,37 @@ Ejemplos:
 Con un volante de auto solo te preocupas por girarlo (abstracción), no por como funciona la dirección hidráulica interna
 En un enchufe solo conectas el aparato (abstracción), no necesitas saber sobre electricidad y circuitos
 
-Relación entre ellos: Trabajan juntos como equipo.
+(Relación entre ellos: Trabajan juntos como equipo.
 La Abstracción define que hace un objeto
 El Encapsulamiento protege como lo hace
 La Herencia organiza y reutiliza el que y como
-El Polimorfismo permite variaciones en el cómo se hace
+El Polimorfismo permite variaciones en el cómo se hace)
+
+(el super se usa para llamar a métodos de la clase padre)
+
+(para decir que un método está sobreescrito tenemos que usar una palabra reservada y ponerla arriba del método (@0verride))
+
+Métodos:
+Las operaciones o métodos son acciones contenidas en una clase, y definen su comportamiento
+Dentro de un sistema, las operaciones suelen detectarse como verbos
+Desde la perspectiva de diseño y programación se denominan métodos
+Desde la perspectiva de análisis, se denominan operaciones
+Puede tener opcionalmente valores de entrada (parámetros) y valores de salida (retorno)
+Pueden existir procedimientos (no retornan un valor) y funciones (retornan un valor)
+
+Getters y setters: 
+Get: Traer
+Set: Colocar
+Con el método get voy a poder traer los datos para ocuparlos
+Con el método set voy a poder colocar o establecer valores para los atributos, o si ya tiene valores, sirve para modificarlos
+El get, retorna valores mientras que el set es mas un procedimiento ya que no retorna ningun valor
+
+Ejemplos:
+GETTER:
+   public int getId() {
+        return id;
+    }
+SETTER:
+    public void setId(int id) {
+        this.id = id;
+    }
