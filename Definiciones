@@ -61,6 +61,10 @@ Desde la perspectiva de análisis, se denominan operaciones
 Puede tener opcionalmente valores de entrada (parámetros) y valores de salida (retorno)
 Pueden existir procedimientos (no retornan un valor) y funciones (retornan un valor)
 
+¿Qué es un Constructor?
+Un constructor es un método especial de una clase que se ejecuta automáticamente cuando se crea un objeto (instancia) de esa clase.
+Su función principal es inicializar el objeto y asignar valores iniciales a sus atributos.
+
 Getters y setters: 
 Get: Traer
 Set: Colocar
