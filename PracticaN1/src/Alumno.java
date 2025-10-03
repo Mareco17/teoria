@@ -47,5 +47,4 @@ public class Alumno {
             System.out.println("Uyy no aprobé");
         } //metodo saberAprobado
     }
-
 }
