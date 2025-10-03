@@ -3,7 +3,7 @@ Los programas se organizan como colecciones cooperativas de objetos
 Representan una instancia de alguna clase
 Todas las clases son miembros de una jerarquía de clases unidas mediante relaciones de herencia
 
-Clase y Objeto:
+CLASE Y OBJETO:
 Una Clase son como “características generales” de un objeto.
 Un Objeto es una instancia de una clase, son como las características que diferencian a distintos objetos de una misma clase.
 
@@ -20,24 +20,24 @@ Conclusión: Todos sabemos lo que es un perro, pero existen características que
 
 Los cuatro pilares claves:
 
-Encapsulamiento:
+ENCAPSULAMIENTO:
 Es como una cápsula que protege los datos internos de un objeto. Solo se puede acceder a través de métodos controlados
 Ejemplos: 
 En un cajero automático no puedes acceder directamente al dinero, sólo through operaciones autorizadas (retiro, depósito)
 
-Herencia:
+HERENCIA:
 Permite que una clase hija herede características y comportamientos de una clase padre
 Ejemplos: 
 Un “auto” y una “moto” heredan de “vehículo” (ambos tienen ruedas, motor, etc)
 “Perro” y ”gato” heredan de ”animal” (comparten comer, respirar, moverse)
 
-Polimorfismo:
+POLIMORFISMO:
 La capacidad de diferentes objetos respondan de manera distinta al mismo mensaje o método
 Ejemplos: 
 El botón “encender” hace cosas diferentes en un “TV”, en una “radio” y un “auto”
 En “animales” el método “hacer sonido” produce distintos “sonidos” en animales distintos 
 
-Abstracción:
+ABSTRACCIÓN:
 Mostrar sólo lo esencial de un objeto, ocultando los detalles complejos de su implementación
 Ejemplos:
 Con un volante de auto solo te preocupas por girarlo (abstracción), no por como funciona la dirección hidráulica interna
@@ -49,11 +49,11 @@ El Encapsulamiento protege como lo hace
 La Herencia organiza y reutiliza el que y como
 El Polimorfismo permite variaciones en el cómo se hace)
 
-(el super se usa para llamar a métodos de la clase padre)
+(el SUPER se usa para llamar a métodos de la clase padre)
 
 (para decir que un método está sobreescrito tenemos que usar una palabra reservada y ponerla arriba del método (@0verride))
 
-Métodos:
+MÉTODOS:
 Las operaciones o métodos son acciones contenidas en una clase, y definen su comportamiento
 Dentro de un sistema, las operaciones suelen detectarse como verbos
 Desde la perspectiva de diseño y programación se denominan métodos
@@ -61,11 +61,11 @@ Desde la perspectiva de análisis, se denominan operaciones
 Puede tener opcionalmente valores de entrada (parámetros) y valores de salida (retorno)
 Pueden existir procedimientos (no retornan un valor) y funciones (retornan un valor)
 
-¿Qué es un Constructor?
+¿QUE ES UN CONSTRUCTOR?
 Un constructor es un método especial de una clase que se ejecuta automáticamente cuando se crea un objeto (instancia) de esa clase.
 Su función principal es inicializar el objeto y asignar valores iniciales a sus atributos.
 
-Getters y setters: 
+GETTERS Y SETTERS: 
 Get: Traer
 Set: Colocar
 Con el método get voy a poder traer los datos para ocuparlos
@@ -81,3 +81,5 @@ SETTER:
     public void setId(int id) {
         this.id = id;
     }
+
+SOBRREESCRITURA: La sobrescritura en Java permite que una clase hija modifique o redefina un método heredado de su clase padre, manteniendo el mismo nombre y firma (nombre y tipos de parámetros). Esto se utiliza para personalizar el comportamiento de un método heredado en un contexto específico de la subclase y es un ejemplo de polimorfismo dinámico, donde la decisión sobre qué método llamar se toma en tiempo de ejecución.
